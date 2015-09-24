@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14A604BC1BB45A9C008D03C8 /* WebServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A604BB1BB45A9C008D03C8 /* WebServiceManager.m */; settings = {ASSET_TAGS = (); }; };
+		14A604C21BB465C7008D03C8 /* NSString+WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A604C11BB465C7008D03C8 /* NSString+WebService.m */; settings = {ASSET_TAGS = (); }; };
 		B8280E69162A18FC0081F709 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8280E68162A18FC0081F709 /* UIKit.framework */; };
 		B8280E6B162A18FC0081F709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8280E6A162A18FC0081F709 /* Foundation.framework */; };
 		B8280E6D162A18FC0081F709 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8280E6C162A18FC0081F709 /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		14A604BA1BB45A9C008D03C8 /* WebServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceManager.h; sourceTree = "<group>"; };
 		14A604BB1BB45A9C008D03C8 /* WebServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceManager.m; sourceTree = "<group>"; };
+		14A604C01BB465C7008D03C8 /* NSString+WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WebService.h"; sourceTree = "<group>"; };
+		14A604C11BB465C7008D03C8 /* NSString+WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WebService.m"; sourceTree = "<group>"; };
 		B8280E64162A18FC0081F709 /* WebServiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebServiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8280E68162A18FC0081F709 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8280E6A162A18FC0081F709 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +70,8 @@
 			children = (
 				14A604BA1BB45A9C008D03C8 /* WebServiceManager.h */,
 				14A604BB1BB45A9C008D03C8 /* WebServiceManager.m */,
+				14A604C01BB465C7008D03C8 /* NSString+WebService.h */,
+				14A604C11BB465C7008D03C8 /* NSString+WebService.m */,
 			);
 			name = "Web Services";
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				B8280E75162A18FC0081F709 /* main.m in Sources */,
 				B8280E79162A18FC0081F709 /* AppDelegate.m in Sources */,
 				B8B5B430162B1727000D0D49 /* HelloWorldViewController.m in Sources */,
+				14A604C21BB465C7008D03C8 /* NSString+WebService.m in Sources */,
 				B8B5B436162B1B92000D0D49 /* LoginTableViewController.m in Sources */,
 				B8B5B439162B1BA2000D0D49 /* SkillsTableViewController.m in Sources */,
 			);

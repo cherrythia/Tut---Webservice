@@ -9,7 +9,12 @@
 #import <Foundation/Foundation.h>
 
 typedef void (^RequestCompletionHandler)(NSString*,NSError*);
+typedef void (^RequestDictionaryCompletionHandler)(NSDictionary*);
 
 @interface WebServiceManager : NSObject
 +(void)requestToPath:(NSString *)path onCompletion:(RequestCompletionHandler)complete;
+
++(void)loginWithUserName:(NSString *)userName
+             andPassWord:(NSString *)password
+            onCompletion:(RequestDictionaryCompletionHandler)complete;
 @end

@@ -8,6 +8,7 @@
 
 #import "LoginTableViewController.h"
 #import "SkillsTableViewController.h"
+#import "WebServiceManager.h"
 
 @interface LoginTableViewController ()
 // Data Model
@@ -31,6 +32,14 @@
 -(void)loginWithUserName:(NSString *)userName andPassword:(NSString *)password
 {
     NSLog(@"%@ : %@",userName,password);
+    [WebServiceManager loginWithUserName:(NSString *)userName andPassWord:(NSString *)password onCompletion:^(NSDictionary *user) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self setUser:user];
+            [self endLogin];
+        });
+    }];
+    
 }
 
 - (IBAction)login:(id)sender
