@@ -26,6 +26,7 @@
                                NSString *result = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
                                
                                if (complete) {
+                                   NSLog(@"Complete %@",complete);
                                    complete(result,error);
                                }
                             }];
