@@ -10,6 +10,8 @@
 #import "NSString+WebService.h"
 
 @implementation WebServiceManager
+
+//typedef void (^RequestCompletionHandler)(NSString*,NSError*);
 +(void)requestToPath:(NSString *)path onCompletion:(RequestCompletionHandler)complete{
     
     NSOperationQueue *backgroundQueue = [[NSOperationQueue alloc]init];
@@ -22,6 +24,7 @@
                                        queue:backgroundQueue
                            completionHandler:^(NSURLResponse * response, NSData * data, NSError * error) {
                                NSString *result = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+                               
                                if (complete) {
                                    complete(result,error);
                                }
